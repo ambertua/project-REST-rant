@@ -2,21 +2,20 @@ const express = require("express");
 const router = express.Router();
 const places = require("../models/places.js");
 
-router.post("/", (req, res) => {
-  console.log(req.body);
+router.post('/', (req, res) => {
   if (!req.body) {
     // Default image if one is not provided
-    req.body = "http://placekitten.com/400/400";
+    req.body = 'http://placekitten.com/400/400'
   }
   if (!req.body.city) {
-    req.body.city = "Anytown";
+    req.body.city = 'Anytown'
   }
   if (!req.body.state) {
-    req.body.state = "USA";
+    req.body.state = 'USA'
   }
-  places.push(req.body);
-  res.redirect("/places");
-});
+  places.push(req.body)
+  res.redirect('/places')
+})
 
 // index route
 router.get("/", (req, res) => {
