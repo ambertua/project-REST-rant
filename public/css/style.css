@@ -33,9 +33,12 @@ body {
     text-align: center;
 }
   
-  main {
+main {
     margin-right: 20px;
     margin-left: 20px;
     background-color: white;
 }
   
+img {
+    max-width: 50%;
+}
