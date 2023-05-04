@@ -5,7 +5,7 @@ function home () {
     return (
         <Def>
             <main>
-                <h1>REST=rant</h1>
+                <h1>REST-rant</h1>
                 <div>
                     <img src='/images/toast.jpg' alt='egg on toast' />
                     <div>   
